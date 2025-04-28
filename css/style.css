@@ -33,9 +33,9 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
+ /* border-top: 1px solid #ccc;
   margin: 1em 0;
-  padding: 0;
+  padding: 0;*/
 }
 
 
@@ -230,6 +230,13 @@ a.thicker{
   font-weight: 500;
 }
 
+.synapsis_smaller{
+  color: #8c0a0a;
+  font-family: "Franklin Gothic Book", sans-serif;
+  font-size: 1em;
+  font-weight: 800;
+  padding:0;
+}
 
 h1{
   font-family: "Franklin Gothic Book", sans-serif !important;
@@ -257,7 +264,7 @@ p.thicker{
 }
 
 .align-right {
-  text-align: right;
+  text-align: right !important;
   display: flex;
   justify-content: space-between;
 }
@@ -300,23 +307,25 @@ p.thicker{
 }
 
 .blue_div {
-  position: relative; /* Needed for absolute positioning inside */
+  position: relative;
   background-color: #063a73;
   color: white;
   font-family: "Franklin Gothic Book", sans-serif;
   font-weight: bold;
-  padding: 15px 10px 10px 30px; /* leave space for text and the circle */
+  padding: 15px 10px 10px 30px;
   display: flex;
   align-items: self-end;
-  height: 35px; /* match the circle's height */
+  height: 35px;
   top:5px;
+  width: 100%;
+  z-index: 1;
 }
 
 .half_circle {
   position: absolute;
-  left: -15px;  /* moves it out of the blue bar */
-  top: 10px;   /* raises it slightly above the blue bar */
-  height: 30px; /* consistent with your image height */
+  left: -15px;
+  top: 10px;
+  height: 30px;
   width: auto;
 }
 .button_reg {
@@ -357,9 +366,31 @@ p.thicker{
   transition: background-color 0.4s ease, color 0.4s ease;
 }
 
+.button_red{
+  position:relative;
+ /* padding-top:-20px;*/
+  padding-bottom:50px;
+  width:100%;
+  background-color: transparent;
+  color: white;
+  align-content:center;
+}
+.button_red:hover {
+  background-color: rgb(128, 0, 0);
+}
+
 .button_fade .icon {
   margin-right: 6px;
   display: inline-block;
+}
+
+.icon img {
+  width: 20px !important;
+  height: 20px !important;
+  display: inline-block !important;
+}
+.button_fade .icon {
+  flex-shrink: 0;
 }
 
 .button1 {
@@ -385,7 +416,7 @@ p.thicker{
 
 .video_section {
   background-color: #e5e5e5;
-  padding: 20px 0;
+  padding:0;
 }
 
 .section_title {
@@ -395,24 +426,52 @@ p.thicker{
   padding-top: 10px;
 }
 
+
 .video_container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  padding: 0;
+  gap:5px;
+}
+.v_container_text{
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  padding: 0 15px;
+  padding: 0;
 }
 
 .video_container > div {
-  background-color: #f1f1f1;
-  width: 250px;
-  height: 210px;
-  margin: 0 5px;
+  min-width: 150px;
   text-align: center;
+  margin:10px;
   font-size: 14px;
   line-height: normal;
-  display:flex;
 }
 
+
+.video_container img {
+  width: 100%;
+  max-height: 150px;
+  height: auto;
+  display: block;
+}
+/*
+
+.video-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.video-container > div {
+  width: 100%;
+  display: flex;
+  flex: 1 1 22%;
+  max-width: 150px;
+  min-width: 90px;
+}
+*/
 .logo {
   height: 74px;
   width: 280px;
@@ -465,21 +524,77 @@ p.thicker{
   background-color: #911421;
   color: white;
   padding: 20px 0;
-  display: flex;
   align-items: center;
-  justify-content: flex-start;
   gap: 20px;
   padding-left: 40px;
 }
 
+.carousel-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+}
+.carousel-container {
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding-bottom: 10px;
+}
+.carousel-item {
+  flex: 0 0 auto;
+  width: 250px;
+  scroll-snap-align: start;
+  background: transparent;
+  overflow: hidden;
+}
+.carousel-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.carousel-item .content {
+  padding: 10px;
+}
+.carousel-item h4 {
+  margin: 0 0 5px;
+  font-size: 1.2rem;
+}
+.carousel-item p {
+  margin: 0;
+  font-size: 1rem;
+}
 
-body{
- /* background-image: url('../bg.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;*/
+/* Button‑style scrollbar navigation */
+.carousel-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.carousel-nav a {
+  display: block;
+  width:40px;
+  height: 3px;
+  background: rgba(221, 221, 221, 0.65);
+  padding:0;
+  margin:0;
+  text-indent: -9999px;
+  transition: background 0.1s;
+}
+.carousel-nav a.active {
+  background: rgba(255, 255, 255, 0.95);
+}
+/*
+.carousel-nav a:hover {
+  background: #aaa;
+}*/
 
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -494,6 +609,15 @@ body{
 .div1 {
   grid-column: span 4 / span 4;
   grid-row: span 6 / span 6;
+  flex: 1 1 22%;
+  max-width: 600px;
+  min-width: 381px;
+}
+
+.div1 img{
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .div3 {
@@ -501,6 +625,9 @@ body{
   grid-row: span 4 / span 4;
   grid-column-start: 1;
   grid-row-start: 7;
+  flex: 1 1 22%;
+  max-width: 400px;
+  min-width: 100px;
 }
 
 .div4 {
@@ -508,6 +635,9 @@ body{
   grid-row: span 4 / span 4;
   grid-column-start: 3;
   grid-row-start: 7;
+  flex: 1 1 22%;
+  max-width: 400px;
+  min-width: 100px;
 }
 
 .div6 {
@@ -515,6 +645,18 @@ body{
   grid-row: span 4 / span 4;
   grid-column-start: 5;
   grid-row-start: 7;
+  flex: 1 1 22%;
+  max-width: 285px;
+  min-width: 100px;
+}
+
+.div3 img,
+.div4 img,
+.div7 img,
+.div6 img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .div7 {
@@ -522,6 +664,9 @@ body{
   grid-row: span 6 / span 6;
   grid-column-start: 5;
   grid-row-start: 1;
+  flex: 1 1 22%;
+  max-width: 600px;
+  min-width: 381px;
 }
 
 .gridside_layout {
@@ -539,29 +684,86 @@ body{
   padding: 10px;
 }
 
-.grid2 > div {
+.grid2  div {
   background-color: transparent;
   text-align: left;
   padding: 10px;
+  flex: 1 1 22%;
+  max-width:380px;
+  max-height: 680px;
+}
+
+.grid2 img {
+  display: flex;
+  width: 100%;
 }
 
 .item1 {
   grid-column-start: 1;
   grid-column-end: 3;
+  flex: 1 1 22%;
+  max-width:600px !important;
+  max-height: 680px;
 }
+.item1 img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 
 .side-column {
   width: 350px;
   background-color: #f0f0f0;
   overflow: hidden;
+  display: block; /* NOT flex here! Keep it a normal block */
 }
+
+.side-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* optional for spacing between items */
+  padding: 10px;
+}
+
+.side-content div {
+  width: 100%;
+  flex: 1 1 22%;
+  max-width: 300px;
+  min-width: 200px;
+  padding: 5px;
+}
+
+.side-content img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .side-column {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    z-index: 1;
+  }
+
+  .side-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 
 .section_wrapper {
   position: relative;
   text-align: center;
   margin-top: 40px;
   background-color: #911421;
-  padding: 50px 0 20px; /* extra top padding for the circle overlap */
+  padding: 50px 0 20px;
 }
 
 .section_title_block h2 {
@@ -607,11 +809,62 @@ body{
   padding:20px;
 }
 
-@media screen and (max-width: 900px) {
-  body {
-    background-color: blue;
-    color: white;
+
+/*MOBILE*/
+#mobile{
+  display: block;
+}
+
+#desktop{
+  display: none;
+}
+
+@media(min-width: 900px){
+  #mobile{
+    display: none;
+  }
+  #desktop{
+    display: block;
   }
 }
 
 
+.red_block_mob{
+  background-color: #911421;
+  color: white;
+  display: flex;
+  /* align-items: center;*/
+  justify-content: space-between;
+  padding:4px;
+}
+
+.header_mobile {
+  position: sticky;
+  top: 0;
+  padding: 2px;
+  background: white;
+  color: black;
+  display:flex;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.main_box_mob{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main_box_mob div{
+  width: 100%;
+  display: flex;
+  flex: 1 1 22%;
+  max-width: 900px;
+  min-width: 381px;
+}
+
+.main_box_mob img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
