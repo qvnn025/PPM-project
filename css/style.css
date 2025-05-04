@@ -193,6 +193,7 @@ a.thicker{
   font-family: "ITC Franklin Gothic Std Book";
   font-size: 1.5em;
   font-weight: 500;
+  padding-left:5px;
 }
 
 .synapsis_smaller{
@@ -222,6 +223,7 @@ p.thicker{
   color:black;
   font-family: "ITC Franklin Gothic Std Book";
   font-weight: bold;
+  padding-left:5px;
 }
 
 .align-left {
@@ -461,10 +463,11 @@ p.thicker{
 }
 @media (max-width: 900px) {
   .logo2 {
-    height: 95px;
+    height: auto;
     width: 100%;
     display: block;
     margin: 15px auto;
+    object-fit: contain;
   }
 }
 .logo_small{
@@ -600,8 +603,10 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  /*
   width: 100vw;
-  height: 100vh;
+  height: 100vh; */
+  width: 100%;
   background: rgba(0,0,0,0.5);
   opacity: 0; visibility: hidden;
   transition: opacity .3s ease;
@@ -819,8 +824,11 @@ body {
 .side-content div {
   width: 100%;
   flex: 1 1 22%;
+  /*
   max-width: 300px;
-  min-width: 200px;
+  min-width: 200px;*/
+  min-width: 0;
+  max-width: 100%;
   padding: 5px;
 }
 
@@ -1185,8 +1193,11 @@ body {
   width: 100%;
   display: flex;
   flex: 1 1 22%;
+  /*
   max-width: 900px;
-  min-width: 381px;
+  min-width: 381px;*/
+  min-width: 0;
+  max-width: 100%;
   justify-content: center;
 }
 
@@ -1194,4 +1205,8 @@ body {
     width: 100%;
     height: auto;
     display: block;
+}
+
+html {
+  overflow-x: hidden;
 }
