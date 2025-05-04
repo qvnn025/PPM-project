@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>PPM-PROJECT</title>
   <link rel="stylesheet" href="css/style.css">
   <meta name="description" content="">
 
@@ -26,58 +26,6 @@
 
 <!--DESKTOP LAYOUT-->
 <div id="desktop">
-
-
-
-  <!--MENU
-  <div class="overlay"></div>
-
-  <div class="menu-wrapper">
-    <div class="sideMenu">
-      <div style="align-items: self-end">
-        <button class="closeBtn align-right">×</button>
-      </div>
-      <a href="#" class="align-center">
-        <img src="logo1.png" alt="Logo" class="logo"/>
-      </a>
-      <div class="align-center">
-        <a class="button_fade button2 align-center">
-          <span class="icon"><img src="icons/src_glass.png" alt="user"></span> CERCA
-        </a>
-      </div>
-      <div>
-        <a class="button_fade button2 align-right">
-          <span class="icon"><img src="icons/newspaper.png" alt="news" height="20" width="20"></span> Sfoglia il
-          quotidiano
-        </a>
-        <a class="button_fade button1 align-right" href="burner_page.html">
-          <span class="icon"><img src="icons/user.png" alt="user"></span> Accedi
-        </a>
-        <button class="button_reg">Abbonati</button>
-      </div>
-      <h1 style="font-family: 'Franklin Gothic Book', sans-serif; font-weight: bold; padding:20px">Group 1</h1>
-      <div class="link_container">
-        <a href="burner_page.html" class="button2">link</a>
-        <a href="burner_page.html" class="button2">link</a>
-        <a href="burner_page.html" class="button2">link</a>
-        <a href="burner_page.html" class="button2">link</a>
-        <a href="burner_page.html" class="button2">link</a>
-        <a href="burner_page.html" class="button2">link</a>
-      </div>
-      <hr class="thick_divider">
-      <h1 style="font-family: 'Franklin Gothic Book', sans-serif; font-weight: bold">Group 2</h1>
-      <div class="link_container">
-        <a href="burner_page.html" class="button2">link</a>
-        <a href="burner_page.html" class="button2">link</a>
-        <a href="burner_page.html" class="button2">link</a>
-        <a href="burner_page.html" class="button2">link</a>
-        <a href="burner_page.html" class="button2">link</a>
-        <a href="burner_page.html" class="button2">link</a>
-      </div>
-      <hr class="thick_divider">
-
-    </div>
-  </div>-->
 
   <div class="main-container">
     <header>
@@ -122,6 +70,7 @@
 
       <nav class="blue_nav" aria-label="main navigation bar">
         <div class="nav-left">
+          <!--DESKTOP MENU-->
           <div class="menu-wrapper">
             <a href="#" class="burgerBtn button_fade button2" aria-label="menu button">
               <span class="icon"><img src="icons/menu-burger.png" alt="MENU"></span>
@@ -131,54 +80,86 @@
             <div class="overlay"></div>
 
             <nav class="sideMenu">
-              <div style="float:right">
+              <div class="align-right">
                 <button class="closeBtn">&times;</button>
               </div>
-
-              <a href="#" class="logo-link align-center">
-                <img src="logo1.png" alt="Logo" class="logo" />
+             <div class="align-center">
+              <a href="#">
+                <img src="logo1_menu.png" alt="Logo" class="logo" />
               </a>
-
+             </div>
+              <div class="align-center">
+                <a class="button_fade button2" aria-label="search button">
+                  <span class="icon"><img src="icons/src_glass.png" alt="user"></span> SEARCH
+                </a>
+              </div>
+              <div class="flex-container">
+                <a class="button_fade button2" href="burner_page.html" target="_self" style="float:left">
+                  <span class="icon"><img src="icons/envelope_menu.png" alt="mail" height="20" width="20"></span> Subscribe to
+                  Newsletter
+                </a>
+                <a class="button_fade button2" href="burner_page.html" aria-label="log in" style="float:right">
+                    <span class="icon"><img  src="icons/user_menu.png" alt="user"></span> Log in
+                  </a>
+                <button class="button_reg">Subscribe</button>
+              </div>
               <div class="menu-section">
-                <p class="menu-title">Edizioni Locali</p>
+                <p class="menu-title">Local News</p>
                 <div class="link_container">
-                  <a href="#" class="button2">Sassari</a>
-                  <a href="#" class="button2">Alghero</a>
-                  <a href="#" class="button2">Cagliari</a>
-                  <a href="#" class="button2">Nuoro</a>
-                  <a href="#" class="button2">Olbia</a>
-                  <a href="#" class="button2">Oristano</a>
+                  <a href="#" class="button3">Place1</a>
+                  <a href="#" class="button3">Place2</a>
+                  <a href="#" class="button3">Place3</a>
+                  <a href="#" class="button3">Place4</a>
+                  <a href="#" class="button3">Place5</a>
+                  <a href="#" class="button3">Place6</a>
                 </div>
               </div>
 
-              <div class="menu-section">
-                <p class="menu-title">Sezioni</p>
-                <div class="link_container">
-                  <a href="#" class="button2">Sardegna</a>
-                  <a href="#" class="button2">Italia Mondo</a>
-                  <a href="#" class="button2">Sport</a>
-                  <a href="#" class="button2">Tempo Libero</a>
-                  <a href="#" class="button2">Video</a>
-                  <a href="#" class="button2">LaNuova@Scuola</a>
-                </div>
-              </div>
               <hr class="divider">
+
               <div class="menu-section">
-                <p class="menu-title">N+</p>
+                <p class="menu-title">Sections</p>
                 <div class="link_container">
-                  <a href="#" class="button2">La Nostra Newsletter</a>
-                  <a href="#" class="button2">Sfoglia il Quotidiano</a>
-                  <a href="#" class="button2">Abbonati</a>
+                  <a href="#" class="button3">Link1</a>
+                  <a href="#" class="button3">Link2</a>
+                  <a href="#" class="button3">Link3</a>
+                  <a href="#" class="button3">Link4</a>
+                  <a href="#" class="button3">Link5</a>
+                  <a href="#" class="button3">Link6</a>
+                </div>
+              </div>
+
+              <hr class="divider">
+
+              <div class="menu-section">
+                <p class="menu-title">V+</p>
+                <div class="link_container">
+                  <a href="#" class="button3">Newsletter</a>
+                  <a href="#" class="button3">News</a>
+                  <a href="#" class="button3">Subscribe</a>
                 </div>
               </div>
              <hr class="divider">
               <div class="menu-section">
-                <p class="menu-title">La Nuova Sardegna</p>
+                <p class="menu-title">Title</p>
                 <div class="link_container">
-                  <a href="#" class="button2">Redazione</a>
-                  <a href="#" class="button2">Scrivici</a>
+                  <a href="#" class="button3">Editor</a>
+                  <a href="#" class="button3">Contact us</a>
                 </div>
               </div>
+              <hr class="divider">
+              <div class=" flex-container_close" style="justify-content: flex-start !important">
+                <a class="align-right flex-container_closer_cells" href="burner_page.html" target="_self"><img
+                  src="icons/soc_1_menu.png" alt="soc1" height="20" width="20"></a>
+                <a class="align-right flex-container_closer_cells" href="burner_page.html" target="_self"><img
+                  src="icons/soc_2_menu.png" alt="soc2" height="20" width="20"></a>
+                <a class="align-right flex-container_closer_cells" href="burner_page.html" target="_self"><img
+                  src="icons/soc_3_menu.png" alt="soc2" height="20" width="20"></a>
+                <a class="align-right flex-container_closer_cells" href="burner_page.html" target="_self"><img
+                  src="icons/soc_4_menu.png" alt="soc2" height="20" width="20"></a>
+              </div>
+
+
             </nav>
           </div>
         </div>
@@ -198,7 +179,7 @@
 
 
 
-      <h1 class="align-center" aria-label="go to city-specific news">SELECT EDITION </h1>
+      <h1 class="align-center" aria-label="go to city-specific news">LOCAL NEWS</h1>
       <nav class="text-row">
         <a class="align-center button_simple flex-container_close_cells thicker" href="burner_page.html" target="_self">Place1</a>
         <a class="align-center button_simple flex-container_close_cells thicker" href="burner_page.html" target="_self">Place2</a>
@@ -633,10 +614,10 @@
             <a href="#" data-index="1">2</a>
             <a href="#" data-index="2">3</a>
           </nav>
-          <div class="button_fade button_red" style="box-sizing: border-box">
+
+          <div class="button_fade button_red">
             <a href="burner_page.html"
-               style="color:white; font-family: 'Franklin Gothic Book', sans-serif; font-weight: bold; top:70px;"
-               class="align-center">Go to</a>
+               class="align-center" style="color:white">WATCH ALL   ></a>
           </div>
         </div>
 
@@ -817,7 +798,7 @@
           </div>
         </div>
 
-        <nav class="carousel-nav">
+        <nav class="carousel-nav2">
           <a href="#" data-index="0">1</a>
           <a href="#" data-index="1">2</a>
           <a href="#" data-index="2">3</a>
@@ -948,37 +929,117 @@
     </div>
   </header>
   <div class="header_mobile">
+    <!--MOBILE MENU-->
     <div class="menu-wrapper">
-      <a href="#" class="burgerBtn button_fade button2">
+      <a href="#" class="burgerBtn button_fade button1" aria-label="menu button">
         <span class="icon"><img src="icons/burger_black.png" alt="MENU"></span>
         MENU
       </a>
-      <!-- (2) Overlay -->
+
       <div class="overlay"></div>
 
-      <!-- (3) Side menu panel -->
       <nav class="sideMenu">
-        <!-- (4) Close button -->
-        <button class="closeBtn">&times;</button>
+        <div class="align-right">
+          <button class="closeBtn">&times;</button>
+        </div>
 
-        <!-- …your menu content… -->
-        <a href="#" class="logo-link align-center">
-          <img src="logo1.png" alt="Logo" class="logo"/>
+        <div class="align-center">
+          <a href="#">
+            <img src="logo1_menu.png" alt="Logo" class="logo" />
+          </a>
+        </div>
+
+        <div class="align-center">
+          <a class="button_fade button2" aria-label="search button">
+            <span class="icon"><img src="icons/src_glass.png" alt="user"></span> SEARCH
+          </a>
+        </div>
+
+        <div class="align-center">
+          <a class="button_fade button2" href="burner_page.html" target="_self">
+            <span class="icon"><img src="icons/envelope_menu.png" alt="mail" height="20" width="20"></span> Subscribe to
+            Newsletter
+          </a>
+        </div>
+
+        <div class="align-center">
+          <a class="button_fade button2" href="burner_page.html" target="_self">
+            <span class="icon"><img src="icons/newspaper_menu.png" alt="mail" height="20" width="20"></span> Read all articles
+          </a>
+        </div>
+
+
+        <div class=" flex-container_close" style="justify-content: center !important">
+          <a class="align-right flex-container_closer_cells" href="burner_page.html" target="_self"><img
+            src="icons/soc_1_menu.png" alt="soc1" height="20" width="20"></a>
+          <a class="align-right flex-container_closer_cells" href="burner_page.html" target="_self"><img
+            src="icons/soc_2_menu.png" alt="soc2" height="20" width="20"></a>
+          <a class="align-right flex-container_closer_cells" href="burner_page.html" target="_self"><img
+            src="icons/soc_3_menu.png" alt="soc2" height="20" width="20"></a>
+          <a class="align-right flex-container_closer_cells" href="burner_page.html" target="_self"><img
+            src="icons/soc_4_menu.png" alt="soc2" height="20" width="20"></a>
+        </div>
+
+
+
+        <div class="menu-section">
+          <p class="menu-title">Local News</p>
+          <div class="link_container">
+            <a href="#" class="button3">Place1</a>
+            <a href="#" class="button3">Place2</a>
+            <a href="#" class="button3">Place3</a>
+            <a href="#" class="button3">Place4</a>
+            <a href="#" class="button3">Place5</a>
+            <a href="#" class="button3">Place6</a>
+          </div>
+        </div>
+
+        <hr class="divider">
+
+        <div class="menu-section">
+          <p class="menu-title">Sections</p>
+          <div class="link_container">
+            <a href="#" class="button3">Link1</a>
+            <a href="#" class="button3">Link2</a>
+            <a href="#" class="button3">Link3</a>
+            <a href="#" class="button3">Link4</a>
+            <a href="#" class="button3">Link5</a>
+            <a href="#" class="button3">Link6</a>
+          </div>
+        </div>
+
+        <hr class="divider">
+
+        <div class="menu-section">
+          <p class="menu-title">V+</p>
+          <div class="link_container">
+            <a href="#" class="button3">Newsletter</a>
+            <a href="#" class="button3">News</a>
+            <a href="#" class="button3">Subscribe</a>
+          </div>
+        </div>
+        <hr class="divider">
+        <div class="menu-section">
+          <p class="menu-title">Title</p>
+          <div class="link_container">
+            <a href="#" class="button3">Editor</a>
+            <a href="#" class="button3">Contact us</a>
+          </div>
+        </div>
+        <hr class="divider">
+        <div class="flex-container">
+        <a class="button_fade button2" href="burner_page.html" aria-label="log in" style="float:left">
+          <span class="icon"><img  src="icons/user_menu.png" alt="user"></span> Log in
         </a>
-
-        <div class="link_container">
-          <a href="burner_page.html" class="button2">Link 1</a>
-          <a href="burner_page.html" class="button2">Link 2</a>
-          <!-- etc. -->
+        <button class="button_reg">Subscribe</button>
         </div>
       </nav>
     </div>
     <a href="#">
       <img src="logo1.png" alt="Logo" class="logo_small"/>
     </a>
-    <a style="font-weight: 500; color:black; padding-top:20px; padding-bottom:20px; padding-left:-10px"
-       href="burner_page.html">
-      <span class="icon"><img src="icons/user.png" alt="user" height="20" width="20"></span> Accedi
+    <a href="burner_page.html" class="button_simple">
+      <span class="icon"><img src="icons/user.png" alt="user" height="20" width="20"></span> Log in
     </a>
   </div>
   <hr class="divider">
@@ -1070,7 +1131,7 @@
         </div>
       </div>
       <!-- Button‑style scrollbar under carousel -->
-      <nav class="carousel-nav">
+      <nav class="carousel-nav2">
         <a href="#" data-index="0">1</a>
         <a href="#" data-index="1">2</a>
         <a href="#" data-index="2">3</a>
@@ -1201,10 +1262,9 @@
           <a href="#" data-index="1">2</a>
           <a href="#" data-index="2">3</a>
         </nav>
-        <div class="button_fade button_red" style="box-sizing: border-box">
+        <div class="button_fade button_red">
           <a href="burner_page.html"
-             style="color:white; font-family: 'Franklin Gothic Book', sans-serif; font-weight: bold; top:70px;"
-             class="align-center">Go to</a>
+             class="align-center" style="color:white">WATCH ALL   ></a>
         </div>
       </div>
 
@@ -1346,7 +1406,7 @@
       </div>
     </div>
     <!-- Button‑style scrollbar under carousel -->
-    <nav class="carousel-nav">
+    <nav class="carousel-nav2">
       <a href="#" data-index="0">1</a>
       <a href="#" data-index="1">2</a>
       <a href="#" data-index="2">3</a>
@@ -1452,14 +1512,16 @@
           </div>
         </div>
       </div>
-    </div>
-
       <!-- Button‑style scrollbar under carousel -->
-      <nav class="carousel-nav">
+      <nav class="carousel-nav2">
         <a href="#" data-index="0">1</a>
         <a href="#" data-index="1">2</a>
         <a href="#" data-index="2">3</a>
       </nav>
+
+    </div>
+
+
 
      <hr class="divider">
   <!--MOBILE FOOTER-->
@@ -1528,6 +1590,7 @@
 <!--END MOBILE LAYOUT-->
 
 <!--SCRIPTS-->
+
 <!--MENU-->
 <script>
   document.querySelectorAll('.menu-wrapper').forEach(wrapper => {
@@ -1557,19 +1620,19 @@
 <script>
   document.querySelectorAll('.carousel-wrapper').forEach(wrapper => {
     const carousel     = wrapper.querySelector('.carousel-container');
-    const navLinks     = wrapper.querySelectorAll('.carousel-nav a');
+    const navLinks     = wrapper.querySelectorAll('.carousel-nav a, .carousel-nav2 a');
     const items        = carousel.querySelectorAll('.carousel-item');
     const gap          = parseInt(getComputedStyle(carousel).gap, 10);
     const itemWidth    = items[0].offsetWidth + gap;
     const slidesToShow = parseFloat(getComputedStyle(carousel).getPropertyValue('--slides-to-show')) || 1;
 
-    // how many “pages” of slides do we have?
+
     const pageCount    = Math.ceil(items.length / slidesToShow);
 
-    // make sure your nav has exactly pageCount+1 links
 
 
-    // width in px to scroll per page
+
+
     const pageWidth    = itemWidth * slidesToShow;
 
     function setActive(page) {
@@ -1579,7 +1642,6 @@
     }
 
     function scrollToPage(page) {
-      // clamp to [0 .. pageCount-1]
       page = Math.min(Math.max(page, 0), pageCount - 1);
       carousel.scrollTo({
         left: page * pageWidth,
@@ -1596,13 +1658,12 @@
     });
 
     carousel.addEventListener('scroll', () => {
-      // recalc current page
       const rawPage = carousel.scrollLeft / pageWidth;
       const page    = Math.round(rawPage);
       setActive(page);
     });
 
-    // initialize at page 0
+
     setActive(0);
 
     scrollToPage(0);
